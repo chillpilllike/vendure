@@ -35,16 +35,5 @@ services:
       DB_PASSWORD: 11e5a5880d9469b7e8ee
       NODE_ENV: production
 
-  database:
-    image: postgres
-    volumes:
-      - vendure-data:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_PASSWORD: 11e5a5880d9469b7e8ee
-      POSTGRES_DB: venture-test
-      POSTGRES_USER: postgres
-
 volumes:
   vendure-data:
