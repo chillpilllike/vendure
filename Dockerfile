@@ -8,10 +8,10 @@ WORKDIR /usr/src/app
 RUN git clone https://github.com/vendure-ecommerce/vendure.git .
 
 # Install dependencies
-RUN npm install
+RUN yarn install
 
 # Build the Vendure project
-RUN npm run build
+RUN yarn build
 
 # Set the default command
-CMD ["npm", "run", "start"]
+CMD ["yarn", "start"]
